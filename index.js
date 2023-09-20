@@ -7,7 +7,11 @@ const cors = require('cors')
 const path = require('path')
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  "origin": "https://login-backend-nine.vercel.app/",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": false,
+}))
 
 app.get("/", (req, res) =>{
     res.send("Hello Cheese")
