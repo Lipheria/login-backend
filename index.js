@@ -8,7 +8,7 @@ const path = require('path')
 
 app.use(express.json())
 app.use(cors({
-  "origin": "https://login-backend-nine.vercel.app/",
+  "origin": "http://login-backend-nine.vercel.app/",
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
   "preflightContinue": false,
 }))
