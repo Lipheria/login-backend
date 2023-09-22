@@ -8,7 +8,7 @@ const path = require('path')
 
 app.use(express.json())
 app.use(cors({
-  origin: ["https://login-register-dashboard.vercel.app/"],
+  origin: ["https://login-register-dashboard.vercel.app"],
   methods: ["GET","HEAD","PUT","PATCH","POST","DELETE"],
   credentials: true,
   preflightContinue: false
